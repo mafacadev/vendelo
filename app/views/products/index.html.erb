@@ -1,0 +1,16 @@
+<h1>Productos</h1>
+
+<% @products.each do |product| %>
+  <%= link_to product_path(product.id) do %>
+    <h3>
+      <%= product.title %>
+    </h3>
+    <span>
+    <p>
+      <%= product.description %>
+    </p>
+  </span>
+  <hr size="1px" color="gray"/>
+  <% end %>
+
+<% end %>
